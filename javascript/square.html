@@ -1,0 +1,38 @@
+<html>
+<title>MadeBits.com - Magic Square</title>
+<script src="magic.js" lang="Javascript"></script>
+<script>
+var matrixSize = 0;
+var data = window.location.hash;
+if((data != null) && (data.length > 2) && (data.charAt(1) == "m"))
+{
+	matrixSize = parseInt(data.substring(2));
+	//alert(matrixSize);
+}
+
+function Generate(n)
+{
+	if(n <= 0) return;
+	var m = FillTable(n);
+	document.write("<table style='border-style:solid;border-width:1px;border-color:#400040;'>");
+	for(var i = 0; i < n; i++)
+	{
+		document.write("<tr>");
+		for(var j = 0; j < n; j++)
+		{
+				document.write("<td style='border-style:solid;border-width:1px;border-color:#e1e1e1;' align='center'>" + m[i][j] + "</td>");
+		}
+		document.write("</tr>");
+	}
+	document.write("</table>");
+}
+
+</script>
+
+<body >
+
+<script>
+document.write("<center><h3 style='color:#400040'>Magic Square [" + matrixSize + "x" + matrixSize + "]</h3>");
+Generate(matrixSize);
+document.write("<p><a href='http://www.madebits.com'>http://www.madebits.com</a> [<a href='#' onClick='window.print();return false;'>Print</a>]</p></center>");
+</script>
