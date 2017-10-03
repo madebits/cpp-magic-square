@@ -13,7 +13,7 @@
  * avoid conficts with the same 'stdlib.h' named function that
  * is included in 's_matrix.h' file.
  *
- * http://madebits.com
+ * 
  */
 
 #include "s_matrix.h" /* offers support for integer dynamic square matrices */

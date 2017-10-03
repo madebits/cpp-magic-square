@@ -1,7 +1,7 @@
 /*
  *	MagicSQ - Magic Square Filler.
  *	(c) 2000 by Vasian CEPA. All rights reserved.
- *	http://madebits.com
+ *	
  */
 
 #include <stdio.h>

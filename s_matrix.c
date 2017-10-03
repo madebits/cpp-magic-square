@@ -1,7 +1,7 @@
 /*
  *	MagicSQ - Magic Square Filler.
  *	(c) 2000 by Vasian CEPA. All rights reserved.
- *	http://madebits.com
+ *	
  */
 
 #include "s_matrix.h"
@@ -86,7 +86,7 @@ static void checkBound(S_MATRIX* m, int i, int j){
 void print(S_MATRIX* m){
 	int i,j;
 	int n = m->getSize(m);
-	fprintf(stderr,"MagicSQ - (c) 2000 by Vasian CEPA - http://madebits.com\n");
+	fprintf(stderr,"MagicSQ - (c) 2000 by Vasian CEPA - \n");
 	for(i = 0; i<n; i++){
 		printf("\n");
 		for(j=0; j< n; j++){

@@ -1,7 +1,7 @@
 /*
  *	MagicSQ - Magic Square Filler.
  *	(c) 2000 by Vasian CEPA. All rights reserved.
- *	http://madebits.com
+ *	
  */
 
 #include "s_matrix.h"
@@ -84,7 +84,7 @@ void magic_fill(S_MATRIX* m){
 
 /* simple help */
 void printUsage(char *programName) {
-	fprintf(stderr,"MagicSQ - (c) 2000 by Vasian CEPA - http://madebits.com\n");
+	fprintf(stderr,"MagicSQ - (c) 2000 by Vasian CEPA - \n");
 	fprintf(stderr,"Usage: %s n > my-magic-square.txt\n", programName);
 	fprintf(stderr,"Where: n an odd integer of matrix dimensions. Even numbers are not supported.\n");
 }
